@@ -1,0 +1,27 @@
+/* .navbar-nav > .active > a {
+    color: green;
+} */
+* {
+    font-family: "Poppins", sans-serif;
+
+    font-style: normal;
+}
+
+.chaintech-text {
+    background: -webkit-linear-gradient(#FFFF00, #00FFA7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.explore-btn {
+    background: linear-gradient(90deg, #FFFF00 10%, #00FFA7 100%);
+}
+
+.glide__arrow {
+    position: absolute;
+    display: block;
+    top: 50%;
+    z-index: 2;
+    opacity: 1;
+    transform: translateY(-50%);
+}
