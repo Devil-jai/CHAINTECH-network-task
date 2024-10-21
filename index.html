@@ -2,47 +2,62 @@
 <html>
 
 <head>
+      <!-- Specifies character encoding for the document -->
     <meta charset="UTF-8">
+      <!-- Ensures the website is responsive to screen sizes by setting the viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- Tailwind CSS CDN for utility-first CSS framework -->
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Chaintech Network</title>
+      <!-- Preconnecting to Google Fonts for performance optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Linking Google Fonts: Poppins font family -->
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+        <!-- Linking custom CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
+     <!-- Flowbite CSS for UI components like modals, tooltips, etc. -->
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+       <!-- Font Awesome for icons -->
     <script src="https://kit.fontawesome.com/707ae8628f.js" crossorigin="anonymous"></script>
+        <!-- Flowbite JS for UI interaction -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 
 
-    <script src="index.js"></script>
+ 
 </head>
 
 <body>
+     <!-- Header section with black background -->
     <header class="bg-black pb-6 pt-1">
 
-
+  <!-- Navigation bar -->
         <nav class="">
             <div class="max-w-screen-2xl  flex flex-wrap items-center justify-between mx-auto p-4 lg:px-16">
+                  <!-- Logo with link -->
                 <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="assets/images/Haintech.png" class="h-8" alt="Flowbite Logo" />
 
                 </a>
+                    <!-- Hamburger menu button for mobile view -->
                 <button data-collapse-toggle="navbar-default" type="button"
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
                     aria-controls="navbar-default" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
+                    <!-- SVG for the hamburger icon -->
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 17 14">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M1 1h15M1 7h15M1 13h15" />
                     </svg>
                 </button>
+                 <!-- Navbar menu items (hidden on mobile by default) -->
                 <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                     <ul
                         class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 bg-black ">
+                          <!-- Individual navbar items -->
                         <li>
                             <a href="#" class="block py-2 lg:px-3 px-1 text-green-500" aria-current="page">Compay</a>
                         </li>
@@ -64,28 +79,32 @@
         </nav>
 
     </header>
+      <!-- Welcome section -->
     <section class="bg-black pt-12 pb-20">
         <div class="flex flex-col items-center">
+            <!-- Large welcome text with responsive sizes for different screens -->
             <h1
                 class="text-white font-bold 3xl:text-9xl xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-3xl text-spacing-3 tracking-widest">
                 WELCOME</h1>
             <h1
                 class="text-white font-bold 3xl:text-9xl xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-3xl tracking-widest">
                 TO<span class="chaintech-text">CHAINTECH</span></h1>
+                 <!-- Short description under welcome text -->
             <p
                 class="text-white 3xl:w-1/3 3xl:mt-5 sm:w-1/2 w-3/4 text-center mt-2 3xl:text-xl mb-6 lg:text-base md:text-sm text-xs ">
                 From square one to engineering excellence! PixelPlex assists in full-cycle software development, jumps
                 in to take it over, or brings dedicated top-demanded skills.</p>
-
+<!-- Call to action button with arrow icon -->
             <button class="rounded-full bg-white px-4 3xl:px-8 py-3 3xl:py-5 3xl:text-2xl hover:bg-gray-200
             sm:text-base text-xs font-bold mt-2">Get Started <span class="bg-black rounded-full py-1 px-2 ms-3"><i
                         class="fa-solid fa-arrow-right text-white"></i></span></button>
         </div>
     </section>
-
+   <!-- Services Section -->
     <section>
         <div>
             <div class=" py-16 ">
+                  <!-- Header for services with navigation buttons -->
                 <div
                     class="mb-6   md:mx-auto mx-8 lg:flex lg:justify-between tablet:w-[1000px] tablet-b:w-[1345px] md:w-[690px]">
                     <div>
@@ -93,6 +112,7 @@
                         <p>Discover the digital possibilities for your brand with our comprehensive suite of services.
                         </p>
                     </div>
+                    <!-- Buttons to navigate through services -->
                     <div class="text-center mt-5 lg:mt-0">
                         <button id="prevBtn"
                             class="  hover:border-2 hover:border-black border-solid px-3 py-2 rounded-full"><i
@@ -102,18 +122,20 @@
                     </div>
                 </div>
 
-
+         <!-- Grid of services offered -->
                 <div class="flex justify-center gap-8 flex-wrap 2xl:grid 2xl:grid-cols-4 2xl:w-[1380px] 2xl:mx-auto sm:mx-0 mx-4">
-
+<!-- Individual service card -->
                     <div
                         class="bg-green-100 border border-[3px] mt-8 border-solid border-black w-80 rounded-2xl font-bold">
                         <div class="flex ps-4 items-center py-3  border-b-[3px] border-solid border-black">
                             <div class=" rounded-full bg-black w-10 h-10 flex me-3 justify-center items-center">
+                                  <!-- Icon made up of two images -->
                                 <img width="12" class="me-[-6px]" src="assets/images/Vector-2.png" alt="">
                                 <img width="7" src="assets/images/Vector.png" alt="">
                             </div>
                             <h6 class="text-[15px]"> Join Development</h6>
                         </div>
+                            <!-- Service title and image -->
                         <div class="text-center mt-5">
                             <div class="text-2xl">
                                 <h2>Blockchain</h2>
@@ -125,6 +147,7 @@
                                     alt="">
                             </div>
                         </div>
+                         <!-- Button for exploring more details -->
                         <div class="text-right pe-5 mb-4">
                             <button class="rounded-full bg-white pe-3 ps-5 3xl:px-8 py-2 hover:text-white hover:bg-black 3xl:py-5 3xl:text-2xl
                 sm:text-base text-xs font-bold mt-2 border border-[3px] border-solid  border-black">Explore<span
@@ -133,6 +156,8 @@
                             </button>
                         </div>
                     </div>
+                      <!-- Additional service cards follow the same structure -->
+                    <!-- Example of another service card -->
                     <div
                         class="bg-[#dcf9fe] border border-[3px] mt-8 border-solid border-black w-80 rounded-2xl font-bold">
                         <div class="flex ps-4 items-center py-3  border-b-[3px] border-solid border-black">
@@ -160,6 +185,7 @@
                                         class="fa-solid fa-arrow-right "></i></span></button>
                         </div>
                     </div>
+                     <!-- Repeat structure for other services... -->
                     <div
                         class="bg-[#fee6e6] border border-[3px] mt-8 border-solid border-black w-80 rounded-2xl font-bold">
                         <div class="flex ps-4 items-center py-3  border-b-[3px] border-solid border-black">
@@ -331,24 +357,29 @@
             </div>
     </section>
 
-
+ <!-- Footer section -->
     <footer>
         <div class="flex flex-col items-center py-7 bg-black">
             <div class="sm:mb-10 mb-5">
+                 <!-- Company logo with responsive sizing for small screens -->
                 <img class="sm:w-[165px] w-32" src="./assets/images/Haintech.png" alt="Haintech">
             </div>
+            <!-- Horizontal rule (line) for separation, responsive width and margin -->
             <hr class=" w-1/2 h-px sm:mb-8 mb-5 bg-gray-200 border-0 dark:bg-gray-700">
+             <!-- Footer text, responsive font size for different screen sizes, lighter color -->
             <p class="text-[#98A6AC] sm:text-xs text-[8px]">© 2024 All Rights Reserved - Chaintech Network</p>
         </div>
     </footer>
+      <!-- Script to extend Tailwind CSS configuration -->
     <script>
         tailwind.config = {
   theme: {
     extend: {
       screens: {
-        "3xl": "2560px",
-        "tablet":"1023px",
-        "tablet-b":"1375px"
+           // Custom screen sizes added for responsiveness
+        "3xl": "2560px", // Extra large screens
+        "tablet":"1023px",// Tablet screens up to 1023px wide
+        "tablet-b":"1375px" // Larger tablet screens up to 1375px wid
       },
     },
   },
